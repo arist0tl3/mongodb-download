@@ -33,8 +33,9 @@
   },
   "devDependencies": {
     "@types/node": "^6.0.70",
+    "bluebird": "^3.5.1",
     "chai": "^3.5.0",
     "mocha": "^3.2.0"
   },
-  "homepage": "https://github.com/winfinit/mongodb-download#readme"
+  "homepage": "https://github.com/fanmilesGmbH/mongodb-download#readme"
 }
