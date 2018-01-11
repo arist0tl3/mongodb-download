@@ -1,9 +1,17 @@
 language: node_js
 node_js:
-  - "8"
-  - "6"
+- '8'
+- '6'
 script:
-  - npm test
+- npm test
 notifications:
   email:
-    - f2-dev@fanmiles.com
+  - f2-dev@fanmiles.com
+deploy:
+  provider: npm
+  email: it@fanmiles.com
+  api_key:
+    secure: b5wLw1pxWBS6o1c2BxIozzVq3Vzk6qGxjQ7Rgu8uxKu2idfzvRhRwQY6SOaeia1zozHT/g3zHRkHwEtQH91XfaiEx/HiaFqWQHVCSqWbOvbKLiXQLEHWm3bfjWWwFFBP3UHTjnCctOTgjRckOApnxkaXFOWuOATjmzOfpx7NWlWX+kbU7ZOufe7B8fUsvFrbLuU6QXUSjVOm+iYIw2Ie7ph0SU8naklQJJ+02BcEpsnB7ux0LS9L6odOE+u/oITbkABjVIQvJ7KyOidSWQAXQ9Pm9kVgyvUkwdSc1gM0Mkux9GoNYmRj7+Wad1dtApYoyna+yxXwn/CJ8z+wimwqzeZNpLfNuUrUFjOMkpIIXcHrtDfp6LmXyHX99+3iswmOoU3jSedyD2gJvBtJkAeVj/218M2EuknzrbCpU4X4zDiSfH9rACArOLtf5/yb/wKh/lazhbJ9tJVCaXaDvJNPhldb2P94xFX0LGWsNHp7BjhkPdo4YwAWz5OXA7mveFa8P7FUSCxT1U6fEnmZwgfdjWowKKdXVLNE0AprJqpx+tMo4g/aIczHH0TOUQxMCAnXUWz0y0xF9Pe998rCh623nQ0GFqX5/FmLIiUYlPLsxEf+qm8EAkS7pmQCdG7ow3fK4csTlmR83TIc4FVwkhk1FqfPHsdv3+Ay9CyfOKrAa3U=
+  on:
+    tags: true
+    repo: FanMilesGmbH/mongodb-download

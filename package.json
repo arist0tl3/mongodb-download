@@ -1,5 +1,5 @@
 {
-  "name": "mongodb-download",
+  "name": "@fanmiles/mongodb-download",
   "version": "2.2.4",
   "description": "download mongodb prebuilt packages from mongodb",
   "main": "built/mongodb-download.js",
