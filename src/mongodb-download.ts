@@ -472,7 +472,7 @@ export class MongoDBPlatform {
   }
   
   getCommonReleaseString(): string {
-    let name: string = `mongodb-${this.getPlatform()}-${this.getArch()}`;
+    let name: string = `mongodb-${this.getPlatform()}-ssl-${this.getArch()}`;
     return name;
   }
   
